@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link rel="stylesheet" href="assets/css/detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">UI/UX PROJECTS</div>
+        <div class="listProduct">
+
+        </div>
+    </div>
+        <!--footer starts-->
+        <footer>
+            <div class="top-footer">
+                <p class ="ending">Gowtham Jegathesan .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="index.html#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><a href = "https://www.instagram.com/imnotgowtham/", target="_blank"><i class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href = "https://www.linkedin.com/in/gowtham-jegathesan/", target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href = "https://dribbble.com/GOWTHAM2321", target="_blank"><i class="uil uil-dribbble"></i></a></div>
+                <div class="icon"><a href = "https://github.com/gowtham-2321", target="_blank"><i class="uil uil-github-alt"></i></a></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="index.html#home" style="text-decoration: none;">Gowtham Jeagthesan</a> - All rights reserved</p>
+            </div>
+        </footer>
+        <!--footer end-->
+
+    
+
+    
+
+    <script>
+        //Important note: If you have downloaded the code
+        // but still encounter errors when running the program,
+         //    please watch the video at this link because
+        // I have shown you how to run the project properly.
+        // https://www.youtube.com/watch?v=okyfcpZfPAU&t=142s
+        let products = null;
+        // get datas from file json
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+        })
+
+        function addDataToHTML(){
+    // remove datas default from HTML
+        let listProductHTML = document.querySelector('.listProduct');
+
+        // add new datas
+        if(products != null) // if has data
+        {
+            products.forEach(product => {
+                let newProduct = document.createElement('a');
+                newProduct.href = '/detail.html?id=' + product.id;
+                newProduct.classList.add('item');
+                newProduct.innerHTML = 
+                `<img src="${product.image}" alt="">
+                <h2>${product.name}</h2>`;
+                listProductHTML.appendChild(newProduct);
+
+            });
+        }
+    }
+
+    </script>
+</body>
+</html>

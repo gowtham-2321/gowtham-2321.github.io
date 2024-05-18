@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/detail.css">
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <!--div class="title">PRODUCT DETAIL</div-->
+        <div class="detail">
+            <div class="image">
+                <img src="">
+            </div>
+            <div class="content">
+                <h1 class="name"></h1>
+                <div class="description"></div>
+            </div>
+        </div>
+
+        <div class="title">Other UI/UX Designs</div>
+        <div class="listProduct"></div>
+    </div>
+    <!--footer starts-->
+    <footer>
+        <div class="top-footer">
+            <p class ="ending">Gowtham Jegathesan .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="index.html#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="index.html#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href = "https://www.instagram.com/imnotgowtham/", target="_blank"><i class="uil uil-instagram"></i></a></div>
+            <div class="icon"><a href = "https://www.linkedin.com/in/gowtham-jegathesan/", target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon"><a href = "https://dribbble.com/GOWTHAM2321", target="_blank"><i class="uil uil-dribbble"></i></a></div>
+            <div class="icon"><a href = "https://github.com/gowtham-2321", target="_blank"><i class="uil uil-github-alt"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="index.html#home" style="text-decoration: none;">Gowtham Jeagthesan</a> - All rights reserved</p>
+        </div>
+    </footer>
+    <!--footer end-->
+
+    
+
+    <script>
+        let products = null;
+        // get datas from file json
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                showDetail();
+        })
+
+        function showDetail(){
+    // remove datas default from HTML
+        let detail = document.querySelector('.detail');
+        let listProduct = document.querySelector('.listProduct');
+        let productId =  new URLSearchParams(window.location.search).get('id');
+        let thisProduct = products.filter(value => value.id == productId)[0];
+        //if there is no product with id = productId => return to home page
+        if(!thisProduct){
+            window.location.href = "/";
+        }
+
+        detail.querySelector('.image img').src = thisProduct.image;
+        detail.querySelector('.name').innerText = thisProduct.name;
+        detail.querySelector('.description').innerText = thisProduct.description;
+
+
+        (products.filter(value => value.id != productId)).forEach(product => {
+            let newProduct = document.createElement('a');
+            newProduct.href = '/detail.html?id=' + product.id;
+            newProduct.classList.add('item');
+            newProduct.innerHTML = 
+            `<img src="${product.image}" alt="">
+            <h2>${product.name}</h2>`;
+            listProduct.appendChild(newProduct);
+        });
+    }
+
+    </script>
+</body>
+</html>
