@@ -115,3 +115,11 @@ sections.forEach(current =>{
 }
 
 window.addEventListener('scroll', scrollActive)
+
+function redirectPageShowcase(){
+  window.location.href = "showcase.html";
+}
+
+function redirectPageMedplay(){
+  window.location.href = "  https://medplay.vercel.app";
+}

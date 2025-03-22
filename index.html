@@ -71,11 +71,12 @@
                 <!--button class="btn blue-btn">Contact</button-->
                 <a href = "https://youtu.be/dQw4w9WgXcQ?si=3zy9NaLqhu7NXAsQ", target="_blank"><button class="btn">Download CV <i class="uil uil-file-alt"></i></button></a>
             </div>
-            <div class="social_icons">
-                <div class="icon"><a href = "https://www.instagram.com/imnotgowtham/", target="_blank"><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href = "https://www.linkedin.com/in/gowtham-jegathesan/", target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href = "https://dribbble.com/GOWTHAM2321", target="_blank"><i class="uil uil-dribbble"></i></a></div>
+            <div class="social_icons">  
                 <div class="icon"><a href = "https://github.com/gowtham-2321", target="_blank"><i class="uil uil-github-alt"></i></a></div>
+                <div class="icon"><a href = "https://www.linkedin.com/in/gowtham-jegathesan/", target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href = "mailto:gowthamjega2005@gmail.com", target="_blank"><i class="uil uil-envelope"></i></a></div>   
+                <div class="icon"><a href = "https://dribbble.com/GOWTHAM2321", target="_blank"><i class="uil uil-dribbble"></i></a></div>
+                <div class="icon"><a href = "https://www.instagram.com/imnotgowtham/", target="_blank"><i class="uil uil-instagram"></i></a></div>      
             </div>
           </div>
           <div class="featured-image">
@@ -94,11 +95,7 @@
             <div class="col">
                 <div class="about-info">
                     <h3>My introduction</h3>
-                    <p> Let's be real, Netflix recommends shows you'll probably watch anyway.
-                        That's the kind of magic I'm after! I'm not just good at fixing bugs in your code (although, I'm a pro at that too).
-                        I'm all about the cool new trending stuff: building websites that don't look like they're from 1999,
-                        and maybe even creating fun 2d games.
-                        Check out my projects! one line of code at a time (with plenty of coffee breaks in between).</p>
+                    <p> I'm Gowtham Jegathesan, a tech geek who turns caffeine into code and ideas into reality! Whether it’s crafting sleek UI designs, building web apps, or diving into AI and cybersecurity, I’m always up for a challenge. I debug life like I debug code—sometimes it works, sometimes it’s just a ‘feature.’ When I’m not coding, you’ll find me sparking debates, creating cool content, or just pretending to be productive. Let’s innovate, create, and maybe even break a few things (intentionally, of course)!</p>
                 </div>
             </div>
             <div class="col">
@@ -151,20 +148,22 @@
               <h1>Fun Projects</h1>
           </div>
           <div class="project-container">
+            <div onclick="redirectPageMedplay()" class="project-box">
+                <i class="uil uil-music"></i>
+                <h3>Medplay</h3>
+                <label>Music Streaming Site</label>
+            </div>
+            <div onclick="redirectPageShowcase()" class="project-box">
+                <i class="uil uil-apps"></i>
+                <a href="showcase.html"><h3>UI/UX</h3></a>
+                <label>Web and App designs</label>
+            </div>
+            
             <div class="project-box">
                 <i class="uil uil-car"></i>
                 <h3>Game Dev</h3>
                 <label>Hill Climb Racing (2D Game)</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-book-reader"></i>
-                <h3>Design Thinking</h3>
-                <label>Designing a Futuristic Classroom</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-apps"></i>
-                <a href="showcase.html"><h3>UI/UX</h3></a>
-                <label>Web and App designs</label>
+                <label>Link will be given soon!</label>
             </div>
           </div>
        </section>
@@ -185,18 +184,18 @@
                 </div>
              </div>
              <div class="col">
-                <div class="form-control">
+                <form class="form-control" action="https://formspree.io/f/xknkrewb" method="POST">
                     <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
+                        <input type="text" name="name" class="input-field" placeholder="Name">
+                        <input type="text" name="email" class="input-field" placeholder="Email">
                     </div>
                     <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message"></textarea>
                     </div>
                     <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                        <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
                     </div>
-                </div>
+                </form>
              </div>
           </div>
        </section>
@@ -226,11 +225,10 @@
             </ul>
         </div>
         <div class="footer-social-icons">
-            <div class="icon"><a href = "https://www.instagram.com/imnotgowtham/", target="_blank"><i class="uil uil-instagram"></i></a></div>
-            <div class="icon"><a href = "https://www.linkedin.com/in/gowtham-jegathesan/", target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
-            <div class="icon"><a href = "https://dribbble.com/GOWTHAM2321", target="_blank"><i class="uil uil-dribbble"></i></a></div>
             <div class="icon"><a href = "https://github.com/gowtham-2321", target="_blank"><i class="uil uil-github-alt"></i></a></div>
-        </div>
+                <div class="icon"><a href = "https://www.linkedin.com/in/gowtham-jegathesan/", target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>                <div class="icon"><a href = "https://dribbble.com/GOWTHAM2321", target="_blank"><i class="uil uil-dribbble"></i></a></div>
+                <div class="icon"><a href = "https://www.instagram.com/imnotgowtham/", target="_blank"><i class="uil uil-instagram"></i></a></div>      
+            </div>
         <div class="bottom-footer">
             <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Gowtham Jeagthesan</a> - All rights reserved</p>
         </div>
@@ -249,5 +247,6 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
+          
 </body>
 </html>

@@ -47,11 +47,13 @@ html{
     background: #bbb;
 }
 
-
 a{
     text-decoration: none;
 }
 
+p{
+    text-align: justify;
+}
 /* ----- GLOBAL BUTTON DESIGN ----- */
 .btn{
     font-weight: 500;
@@ -328,15 +330,15 @@ h3{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-block: 30px 70px;
-    padding-inline: 20px;
+    
+    padding-block: 30px 50px;
+    padding-inline: 60px;
     width: 100%;
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
 }
 .about-info p{
-    text-align: center;
     font-size: 15px;
     color: #777;
 }
@@ -392,6 +394,7 @@ h3{
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    cursor: pointer;
 }
 .project-box>i{
     font-size: 50px;
