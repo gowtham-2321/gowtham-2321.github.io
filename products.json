@@ -33,49 +33,49 @@
         "id": 6,
         "name":" ILLUSTRATIONS",
         "image": "img/6.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "I designed an app UI that beautifully displays illustrations based on different categories. My goal was to create a visually immersive experience where users can effortlessly browse and explore artwork. The clean and intuitive layout ensures that each illustration stands out, while the categorized sections make it easy to find illustrations based on themes, moods, or genres."
     },
     {
         "id": 7,
         "name":" CITY EXPLORER",
         "image": "img/7.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "I designed a UI for a City Explorer app that helps users navigate and discover cities with ease. The interface is clean and intuitive, providing categorized information on landmarks, restaurants, events, and hidden gems. My focus was on creating a visually engaging experience where users can explore cities seamlessly, whether they’re locals or travelers."
     },
     {
         "id": 8,
         "name":" BLOG POST",
         "image": "img/8.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "The Blog Post app UI is designed to provide a clean and immersive reading experience. It features a well-structured layout that categorizes articles for easy navigation, ensuring users can find content that interests them. The interface highlights trending blogs, allows users to save favorites, and supports interaction through likes and comments. The design prioritizes readability with a minimalist aesthetic while maintaining functionality for an engaging user experience."
     },
     {
         "id": 9,
         "name":" LEARNING APP",
         "image": "img/9.png",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "The Learning App UI is designed to educate users through blog-style explanations of various topics. It features a structured layout that categorizes subjects for easy access, allowing users to explore and deepen their understanding in an engaging format. Each blog post presents concepts in a clear and concise manner, often supplemented with visuals, examples, and interactive elements. The interface also includes bookmarking, progress tracking, and discussion sections to enhance the learning experience. The design focuses on readability and user engagement, ensuring a seamless and enriching educational journey."
     },
     {
         "id": 10,
         "name":" ONBOARDING UI",
         "image": "img/10.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "The Simple Onboarding UI is designed to provide a smooth and intuitive introduction to the app. It features a clean, minimalistic layout with a step-by-step flow, guiding users through key features and functionalities. The design includes visually appealing illustrations, concise descriptions, and interactive elements like swipe gestures or progress indicators. A seamless sign-up or login process ensures quick access, making the onboarding experience effortless and engaging."
     },
     {
         "id": 11,
-        "name":" LD11 LOUNGE CHAIR",
+        "name":"TOURISM APP",
         "image": "img/11.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "The Tourism App UI is designed to offer a seamless and visually engaging travel experience. It features a well-organized layout with categorized destinations, attractions, and travel guides. Users can explore popular landmarks, discover hidden gems, and access essential travel information such as maps, itineraries, and local recommendations. The interface is intuitive, incorporating high-quality images, interactive maps, and easy navigation to enhance the user experience. Personalization features, such as trip planning and saved favorites, ensure a tailored and convenient journey for travelers."
     },
     {
         "id": 12,
         "name":" BLOG READING",
         "image": "img/12.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "The Blog Reading App UI is designed for a seamless and enjoyable reading experience. It features a clean and minimalistic layout that prioritizes readability, with categorized blogs for easy navigation. Users can explore trending articles, bookmark favorites, and engage through likes and comments. The interface supports a distraction-free mode, dark mode, and customizable font sizes to enhance user comfort. Smooth navigation and a visually appealing design make reading engaging and effortless."
     },
     {
         "id": 13,
         "name":" TECH NEWS",
         "image": "img/13.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "The Tech News Onboarding UI is designed to provide a smooth introduction to the app’s features and content. It features a minimalistic, visually engaging layout with step-by-step screens highlighting personalized news, trending topics, and bookmarking options. The onboarding flow includes concise text, relevant illustrations, and interactive elements like category selection for a tailored news experience. A quick sign-up or login option ensures users can start exploring the latest tech updates effortlessly."
     }
 
 ]
