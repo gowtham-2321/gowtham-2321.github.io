@@ -48,7 +48,9 @@ html{
 }
 
 
-/* ---##-- REUSABLE CSS --##--- */
+a{
+    text-decoration: none;
+}
 
 /* ----- GLOBAL BUTTON DESIGN ----- */
 .btn{
